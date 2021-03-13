@@ -27,7 +27,7 @@ public class SQSConfiguration {
     public AsyncTaskExecutor asyncTaskExecutor() {
         ThreadPoolTaskExecutor asyncTaskExecutor = new ThreadPoolTaskExecutor();
         asyncTaskExecutor.setCorePoolSize(20);
-        asyncTaskExecutor.setMaxPoolSize(30);
+        asyncTaskExecutor.setMaxPoolSize(50);
         asyncTaskExecutor.setQueueCapacity(5);
         asyncTaskExecutor.setThreadNamePrefix("jobThread-");
         asyncTaskExecutor.initialize();
